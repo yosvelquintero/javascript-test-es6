@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JavaScript test ES6</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="row">
+        <div class="column">
+          <h1>
+            <a href="./">JavaScript test ES6</a>
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="column">
+        <p>For the following questions, please organize your solutions so that each question can be tested independently of the other questions. You can organize the solutions in any way that makes sense to you. Don’t feel you need to finish every question
+          in three hours. Instead, do each question to a level of quality you would be proud of releasing to a client.</p>
+      </div>
+    </div>
+    
+    <!-- QuestionOne -->
+    <div class="row">
+      <div class="column">
+        <h3>Question 1</h3>
+        <p>Given 2 database tables:</p>
+        <p>table students:<br>| id | name | address |</p>
+        <p>table applications:<br>| id | student_id | score |</p>
+        <p>Write a query to list the number of applications each student has. Report 0 for students with no applications. List students first by number of applications, then alphabetically by name.</p>
+        <div id="answerOne"></div>
+        <button id="questionOne" class="button button-black button-outline">
+          Get SQL code
+        </button>
+      </div>
+    </div>
+    <!-- /QuestionOne -->
+
+    <!-- QuestionTwo -->
+    <div class="row">
+      <div class="column">
+        <h3>Question 2</h3>
+        <p>Given a raw string of html with no formatting like:</p>
+        <pre><code>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;a&gt;&lt;/a&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+
+        <p>Write a program to produce the following output:</p>
+        <pre><code>&lt;html&gt;
+    &lt;body&gt;
+        &lt;div&gt;
+            &lt;a&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <p>If the html is not valid (ie, there are mismatched or missing tags), print an error. Thus, the following two strings should produce errors:</p>
+
+        <pre><code>&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;/a&gt;&lt;/body&gt;&lt;/html&gt;
+&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;a&gt;&lt;/div&gt;&lt;/a&gt;</code></pre>
+
+        <form name="formQuestionTwo">
+          <fieldset>
+            <label for="codeField">Enter code to be formatted:</label>
+            <textarea class="vert" placeholder="Enter code..." id="codeField"></textarea>
+          </fieldset>
+        </form>
+
+        <div id="answerTwo"></div>
+        <button id="questionTwo" class="button button-black button-outline">
+          Get formatted code
+        </button>
+      </div>
+    </div>
+    <!-- /QuestionTwo -->
+
+    <!-- QuestionThree -->
+    <div class="row">
+      <div class="column">
+        <h3>Question 3</h3>
+        <p>For the array of letters (a, b, c, d, e, f), write a <strong>recursive</strong> function that outputs the following structure:</p>
+        <pre><code>&lt;a&gt;
+    &lt;b&gt;
+        &lt;c&gt;
+            &lt;d&gt;
+                &lt;e&gt;
+                    &lt;f&gt;
+                    &lt;/f&gt;
+                &lt;/e&gt;
+            &lt;/d&gt;
+        &lt;/c&gt;
+    &lt;/b&gt;
+&lt;/a&gt;</code></pre>
+        <div id="answerThree"></div>
+        <button id="questionThree" class="button button-black button-outline">
+          Get formatted code 
+        </button>
+      </div>
+    </div>
+    <!-- /QuestionThree -->
+
+    <!-- QuestionFour -->
+    <div class="row">
+      <div class="column">
+        <h3>Question 4</h3>
+        <p>Write a program that reads a CSV file with information about different regular polygons (<strong>all sides equal</strong>), and circles. Each row of the file contains the name of the polygon and its side length, in order. Acceptable polygons include:</p>
+        <ul>
+          <li>triangle</li>
+          <li>square</li>
+          <li>pentagon</li>
+        </ul>
+        <p>Note also that the shape "circle" should be accepted. Of course, a circle has no side length; instead, the dimension refers to its radius.</p>
+        <p>Here is an example CSV file:</p>
+        <p class="padding-left-20">triangle,3.5 <br>
+        circle,2</p>
+        <p>Given the input above, your program should output:</p>
+        <ul>
+          <li>A triangle with side length 3.5 u has a perimeter of 10.5 u and an area of 5.30 u^2</li>
+          <li>A circle with radius 2 u has a perimeter of 12.57 u and an area of 12.57 u^2</li>
+        </ul>
+        <p>Provide a judicious amount of unit tests for all the above requirements. You do not need to use a third-party unit testing tool. Just write some tests that give your code a good run for its money.</p>
+
+        <div id="answerFour"></div>
+        <button id="questionFour" class="button button-black button-outline">
+          Answer question 
+        </button>
+      </div>
+    </div>
+    <!-- /QuestionFour -->
+
+    <footer class="footer">
+      <p>&copy; 2016 JavaScript test ES6</p>
+    </footer>
+  </div>
+  <script src="../dist/preload.bundle.js"></script>
+</body>
+
+</html>
