@@ -30,7 +30,7 @@ $ gulp
 
 ## Development
 
-Run from command line: 
+Run in the command line: 
 
 ```bash
 $ gulp server 

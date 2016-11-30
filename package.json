@@ -1,7 +1,7 @@
 {
   "name": "javascript-test-es6",
   "version": "1.0.0",
-  "description": "JavaScript test solution using Babel, Gulp, Webpack and testing with Mocha and Chai",
+  "description": "JavaScript test solution using Babel, Webpack, Gulp and unit testing with Mocha and Chai",
   "main": "src/main.js",
   "scripts": {
     "build": "gulp",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://yosvelquintero@bitbucket.org/yosvelquintero/javascript-test-es6.git"
+    "url": "https://github.com/yosvelquintero/javascript-test-es6.git"
   },
   "keywords": [
     "gulp",
@@ -21,7 +21,7 @@
   ],
   "author": "Yosvel Quintero",
   "license": "ISC",
-  "homepage": "https://yosvelquintero@bitbucket.org/yosvelquintero/javascript-test-es6.git#readme",
+  "homepage": "https://github.com/yosvelquintero/javascript-test-es6#readme",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^5.8.25",
